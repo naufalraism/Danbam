@@ -1,0 +1,32 @@
+.banner-container h1{
+    color: white;
+    margin-left: auto;
+    padding-left: 850px;
+    margin-top: 21px;
+    font-size: 75px;
+    padding-top: 250px;
+    text-shadow:  -6px -1px 0 #000, 1px -1px 0 #000, -6px 6px 0 #000, 1px 1px 0 #000;
+}
+
+.banner-container h2 {
+    text-decoration: none;
+    color: #ff10f0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 900px;
+    font-size: 27px;
+    margin-top: -60px;
+   text-shadow: -5px -1px 0 #000, 1px -1px 0 #000, -5px 3px 0 #000, 1px 1px 0 #000;    
+}
+
+.banner-background{
+    margin-top: 33px;
+    background-size: cover;
+    background-image: url(../Assets/3.jpg);
+    height: 500px;
+    
+}
+
+.container-text{
+    color: white;
+}

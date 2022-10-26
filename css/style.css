@@ -1,0 +1,394 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, sans-serif; margin:0;
+    background-color: black;
+}
+
+* {box-sizing: border-box}
+
+/* Navbar */
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 10px;
+    float: left;
+}
+
+.navbar-right{
+  float: right;
+}
+
+.nav-link:hover {
+  background-color: #1F51FF;
+  color: white;
+}
+
+.nav-link.active {
+  background-color: #ff10f0;
+  color: white;
+}
+
+.navbar-content{
+    margin: 0%;
+}
+
+.navbar-logo{
+  margin: 15px;
+  margin-right: 750px;
+  width: 75px;
+  margin-left: 10px;
+  float: left;
+}
+
+.navbar-item{
+    color: #ff10f0;
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    margin-top: 30px;
+}
+/* Tutup Navbar */
+
+/* Awal Carousel */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1550px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide images dengan default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posisi "next button" ke kanan */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover, black bg color sedikit transparan */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.container {
+  position: relative;
+}
+
+/* Text bawah kanan */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ff10f0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Mengecilkan ukuran text pada layar kecil */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Akhir Carousel */
+
+h3, h5{
+    color: #ff10f0;
+}
+
+h1{
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.text-content{
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  color: white;
+}
+
+.body-item2{
+    margin-left: 250px;
+    margin-top: -2px;
+    font-weight: 400;
+    padding-left: 50px;
+    color: white;
+}
+
+.col-1{
+    color: white;
+}
+
+.container-content{
+  background-color: black;
+}
+
+.container-map {
+    /*
+    border: 3px solid blue;
+    */
+    width: 300px;
+    height: 300px;
+    margin: 5px 30px 30px 0;
+    padding-left: 10px;
+    float: left;
+}
+
+.container-text{
+    display: inline;
+  }
+
+/* Recomendation Food */
+.body-item h2 {
+    margin-left: 30px;
+    color: White;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.body-item2{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -2px;
+    font-weight: 400;
+    color: white;
+}
+.body-text{
+    padding:  5px 5px ;
+    background-color: black;
+}
+
+.row {
+  margin: 8px 0px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Tutup Recomendation Food */
+
+/* Footer */
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #15323a;
+}
+
+.footer-logo{
+ left: 10px;
+}
+
+.footer-border {
+  position: absolute;
+   width: 100%;
+   background-color: #ff10f0;
+   text-align: center;
+}
+
+.footer-content1, .footer-content2, .footer-content3 {
+  text-align: center;
+}
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+
+.footer-content{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-content .footer-left,
+.footer-content .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-content .footer-left{
+  width: 40%;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-top: -40px;
+}
+
+/* Logo */
+
+.footer-content h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-content h3 span{
+  color:  #5383d3;
+}
+
+/* Footer Right */
+
+.footer-content .footer-right{
+  width: 35%;
+  float: right;
+}
+
+.footer-content .footer-right i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-content .footer-right i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-content .footer-right p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-content .footer-right p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-content .footer-right p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+/* Hapus ini kalau tdk mau footer responsive */
+
+@media (max-width: 880px) {
+
+  .footer-content{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-content .footer-left,
+  .footer-content .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-content .footer-right i{
+    margin-left: 0;
+  }
+
+}
+/* Penutup Footer */
